@@ -13,15 +13,15 @@ This batch script is designed to automate the process of updating all installed 
   ```bash
   winget upgrade --all --accept-package-agreements --accept-source-agreements --accept-unknown --silent
 
-winget upgrade --all: This part instructs winget to upgrade all packages installed on the system.
+- winget upgrade --all: This part instructs winget to upgrade all packages installed on the system.
 
---accept-package-agreements: Automatically accepts the license agreements for the packages being upgraded.
+- --accept-package-agreements: Automatically accepts the license agreements for the packages being upgraded.
 
---accept-source-agreements: Automatically accepts the agreements for any sources that the packages might be coming from.
+- --accept-source-agreements: Automatically accepts the agreements for any sources that the packages might be coming from.
 
---accept-unknown: Allows the upgrade of unknown packages that are not recognized by the current package sources.
+- --accept-unknown: Allows the upgrade of unknown packages that are not recognized by the current package sources.
 
---silent: Executes the command without requiring user interaction, allowing for a seamless upgrade experience.
+- --silent: Executes the command without requiring user interaction, allowing for a seamless upgrade experience.
 
 Error Level Check: After attempting to upgrade the packages, the script checks the exit code (error level) of the previous command:
 
